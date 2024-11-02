@@ -3,6 +3,11 @@
   "displayName": "Vue Fast Script",
   "description": "Fast generate script setup code from Vue template. Select variable or event name, press Ctrl+G to generate code.",
   "version": "0.0.1",
+  "publisher": "typeve",
+  "author": "typeve",
+  "repository": {
+    "url": "https://github.com/Typeve/vue-fast-script"
+  },
   "engines": {
     "vscode": "^1.95.0"
   },
