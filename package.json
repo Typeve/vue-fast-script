@@ -2,14 +2,14 @@
   "name": "vue-fast-script",
   "displayName": "Vue Fast Script",
   "description": "Fast generate script setup code from Vue template. Select variable or event name, press Ctrl+G to generate code.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "typeve",
   "author": "typeve",
   "repository": {
     "url": "https://github.com/Typeve/vue-fast-script"
   },
   "engines": {
-    "vscode": "^1.95.0"
+    "vscode": "^1.90.0"
   },
   "categories": [
     "Other"
@@ -34,6 +34,7 @@
     ]
   },
   "scripts": {
+    "publish": "vsce publish --no-dependencies",
     "vscode:prepublish": "pnpm run package",
     "compile": "pnpm run check-types && pnpm run lint && node esbuild.js",
     "watch": "npm-run-all -p watch:*",
@@ -48,16 +49,16 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.95.0",
     "@types/mocha": "^10.0.9",
     "@types/node": "20.x",
+    "@types/vscode": "^1.90.0",
     "@typescript-eslint/eslint-plugin": "^8.10.0",
     "@typescript-eslint/parser": "^8.7.0",
-    "eslint": "^9.13.0",
-    "esbuild": "^0.24.0",
-    "npm-run-all": "^4.1.5",
-    "typescript": "^5.6.3",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.13.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.6.3"
   }
 }
